@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Zadanie zdalne e-MSI</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href=  " https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="container">
+	<div id="tytul">
+		<h1> Zadanie zdalne e-MSI <h1/>
+	</div>
+	
+	<div id="lewy">
+		
+		<a href="kontrolki.html"><button class="menu aktywny">Różne kontrolki HTML</button></a>
+		<a href="pracownicy.html"><button class="menu">Tabela Pracowników</button></a>
+		<a href="faktury.html"><button class="menu">Tabela Faktur VAT</button></a>
+		<a href="delegacje.php"><button class="menu">Tabela Delegacji BD</button></a>
+		<a href="kontrahenci.php"><button class="menu">Dane Kontrahentów</button></a>
+	
+	</div>
+
+	<div id="prawy">
+		  <p>
+		  <h3>Dane kontahenta</h3>
+		<label for="nip">NIP:</label>
+		<input type="text" id="nip" name="nip">
+		<label for="regon">REGON:</label>
+		<input type="number" id="regon" name="regon">
+		<label for="nazwa">NAZWA:</label>
+		<input type="text" id="nazwa" name="nazwa">
+		<label for="data">DATA POWSTANIA:</label>
+		<input type="date" id="data" name="data">
+		<label for="ulica">ULICA:</label>
+		<input type="text" id="ulica" name="ulica">
+		<label for="dom">NUMER DOMU:</label>
+		<input type="text" id="dom" name="dom">
+		<label for="mieszkanie">NUMER MIESZKANIA:</label>
+		<input type="text" id="mieszkanie" name="mieszkanie">
+		<label for="uwagi">UWAGI:</label>
+		<textarea id="uwagi" name="uwagi" rows="4" cols="50">
+		</textarea>
+		</p>
+		<p><h3>Listy wyboru</h3>
+		<label for="kolor">KOLOR:</label>
+		<select id="kolor">
+		  <option>zielony</option>
+		  <option>niebieski</option>
+		  <option>szary</option>
+		  <option>turkusowy</option>
+		  <option>granatowy</option>
+		  <option>czerwony</option>
+		  <option>biały</option>
+		</select>
+		<label for="vat">VAT:</label>
+		<select id="vat">
+		  <option>ZW</option>
+		  <option>NP.</option>
+		  <option>0%</option>
+		  <option>3%</option>
+		  <option>8%</option>
+		  <option>23%</option> 
+		</select><br><br>
+		</p>
+		<p><h3>Lista uporządkowana</h3>
+		<ol id="lista">
+			<li>Element</li>
+			<li>Element</li>
+			<li>Element</li>
+		</ol>
+		</p>
+	</div>
+	<div id="bottom"></div>
+</div>
+</body>
+</html>

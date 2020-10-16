@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Zadanie zdalne e-MSI</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+   <link rel="stylesheet" href=   "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="container">
+	<div id="tytul">
+		<h1> Zadanie zdalne e-MSI <h1/>
+	</div>
+	
+	<div id="lewy">
+		<a href="kontrolki.html"><button class="menu">Różne kontrolki HTML</button></a>
+		<a href="pracownicy.html"><button class="menu">Tabela Pracowników</button></a>
+		<a href="faktury.html"><button class="menu aktywny">Tabela Faktur VAT</button></a>
+		<a href="delegacje.php"><button class="menu">Tabela Delegacji BD</button></a>
+		<a href="kontrahenci.php"><button class="menu">Dane Kontrahentów</button></a>
+	</div>
+
+	<div id="prawy">
+	<table class="table table-hover">
+    <thead class="naglowek_tabeli">
+        <tr>
+        <th scope="col">Lp.</th>
+        <th scope="col">Opis</th>
+        <th scope="col">MPK</th>
+        <th scope="col">Kwota Netto</th>
+        <th scope="col">Ilość</th>
+        <th scope="col">VAT</th>
+        <th scope="col">Kwota Brutto</th>
+        <th scope="col">Wartość Netto</th>
+        <th scope="col">Wartość Brutto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row_vat">
+        <th scope="row">1</th>
+        <td>Opis1</td>
+        <td>MPK1</td>
+        <td class="kwota_netto">1000</td>
+        <td class="ilosc">5</td>
+        <td>
+            <select class="vat form-control" onchange="updateVAT()">
+                <option value="0">0%</option>
+                <option value="3">3%</option>
+                <option value="8">8%</option>
+                <option value="23">23%</option>
+            </select>
+        </td>
+        <td class="kwota_brutto"></td>
+        <td class="wartosc_netto"></td>
+        <td class="wartosc_brutto"></td>
+        </tr>
+
+        <tr class="row_vat">
+        <th scope="row">2</th>
+        <td>Opis2</td>
+        <td>MPK2</td>
+        <td class="kwota_netto">1600</td>
+        <td class="ilosc">4</td>
+        <td>
+            <select class="vat form-control" onchange="updateVAT()">
+                <option value="0">0%</option>
+                <option value="3">3%</option>
+                <option value="8">8%</option>
+                <option value="23">23%</option>
+            </select>
+        </td>
+        <td class="kwota_brutto"></td>
+        <td class="wartosc_netto"></td>
+        <td class="wartosc_brutto"></td>
+        </tr>
+
+        <tr class="row_vat">
+        <th scope="row">3</th>
+        <td>Opis3</td>
+        <td>MPK3</td>
+        <td class="kwota_netto">100</td>
+        <td class="ilosc">3</td>
+        <td>
+            <select class="vat form-control" onchange="updateVAT()">
+                <option value="0">0%</option>
+                <option value="3">3%</option>
+                <option value="8">8%</option>
+                <option value="23">23%</option>
+            </select>
+        </td>
+        <td class="kwota_brutto"></td>
+        <td class="wartosc_netto"></td>
+        <td class="wartosc_brutto"></td>
+        </tr>
+
+        <tr class="row_vat">
+        <th scope="row">4</th>
+        <td>Opis4</td>
+        <td>MPK4</td>
+        <td class="kwota_netto">2000</td>
+        <td class="ilosc">4</td>
+        <td>
+            <select class="vat form-control" onchange="updateVAT()">
+                <option value="0">0%</option>
+                <option value="3">3%</option>
+                <option value="8">8%</option>
+                <option value="23">23%</option>
+            </select>
+        </td>
+        <td class="kwota_brutto"></td>
+        <td class="wartosc_netto"></td>
+        <td class="wartosc_brutto"></td>
+        </tr>
+
+        <tr class="row_vat">
+        <th scope="row">5</th>
+        <td>Opis5</td>
+        <td>MPK5</td>
+        <td class="kwota_netto">400</td>
+        <td class="ilosc">12</td>
+        <td>
+            <select class="vat form-control" onchange="updateVAT()">
+                <option value="0">0%</option>
+                <option value="3">3%</option>
+                <option value="8">8%</option>
+                <option value="23">23%</option>
+            </select>
+        </td>
+        <td class="kwota_brutto"></td>
+        <td class="wartosc_netto"></td>
+        <td class="wartosc_brutto"></td>
+        </tr>
+    
+    </tbody>
+    </table>
+	<br>
+	  <button id="netto_button"  type="button" class="btn btn-primary">Kwota netto powyżej 1000zł</button>
+	
+</div>
+<script src="script.js"></script>
+</body>
+</html>

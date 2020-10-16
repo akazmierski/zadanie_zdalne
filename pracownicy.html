@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Zadanie zdalne e-MSI</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="container">
+	<div id="tytul">
+		<h1> Zadanie zdalne e-MSI <h1/>
+	</div>
+	
+	<div id="lewy">
+		
+		<a href="kontrolki.html"><button class="menu">Różne kontrolki HTML</button></a>
+		<a href="pracownicy.html"><button class="menu aktywny">Tabela Pracowników</button></a>
+		<a href="faktury.html"><button class="menu">Tabela Faktur VAT</button></a>
+		<a href="delegacje.php"><button class="menu">Tabela Delegacji BD</button></a>
+		<a href="kontrahenci.php"><button class="menu">Dane Kontrahentów</button></a>
+	</div>
+
+	<div id="prawy">
+		    <table class="table table-hover">
+    <thead class="naglowek_tabeli">
+        <tr>
+        <th scope="col">Lp.</th>
+        <th scope="col">Imię</th>
+        <th scope="col">Nazwisko</th>
+        <th scope="col">Stanowisko</th>
+        <th scope="col">Data zatrudnienia</th>
+        <th scope="col">Ilość dni urlopowych</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="row_color">
+        <th scope="row">1</th>
+        <td>Marcin</td>
+        <td>Jankowski</td>
+        <td>Dyrektor</td>
+        <td>4 marzec 2004</td>
+        <td>30</td>
+        </tr>
+        <tr class="row_color">
+        <th scope="row">2</th>
+        <td>Mikołaj</td>
+        <td>Ochotny</td>
+        <td>Prezes</td>
+        <td>23 czerwiec 2003</td>
+        <td>25</td>
+        </tr>
+        <tr class="row_color">
+        <th scope="row">3</th>
+        <td>Maciej</td>
+        <td>Kowalski</td>
+        <td>Manager</td>
+        <td>28 luty 2006</td>
+        <td>6</td>
+        </tr>
+        <tr class="row_color">
+        <th scope="row">4</th>
+        <td>Alicja</td>
+        <td>Maciejewska</td>
+        <td>Web Developer</td>
+        <td>27 kwiecień 2020</td>
+        <td>26</td>
+        </tr>
+        <tr class="row_color">
+        <th scope="row">5</th>
+        <td>Wiktoria</td>
+        <td>Ratajczak</td>
+        <td>Sprzątaczka</td>
+        <td>1 lipiec 2010</td>
+        <td>15</td>
+        </tr>
+        <tr class="row_color">
+        <th scope="row">6</th>
+        <td>Artur</td>
+        <td>Lewandowski</td>
+        <td>Księgowy</td>
+        <td>10 wrzesień 2014</td>
+        <td>20</td>
+        </tr>
+    </tbody>
+    </table>
+	    <br>
+
+    <div class="row">
+        
+            <div id="choose_colors">
+                <div>
+                    <p>Kolor wierszy nieparzystych:</p>
+                    <form>
+                    <input type="color" id="colorOdd" value="#eb835e" onchange="setColor()">
+                </div>
+
+                <div>
+                    <p>Kolor wierszy parzystych:</p>
+                    <input type="color" id="colorEven" value="#5ed1eb" onchange="setColor()">
+                </div>
+            </div>
+			
+    </div>
+
+
+
+    <br>
+	</div>
+	<div id="bottom"></div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>

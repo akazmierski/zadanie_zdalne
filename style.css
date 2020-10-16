@@ -1,0 +1,84 @@
+﻿  #container
+  {
+  width: auto;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  #tytul
+  {
+  background-color: black;
+  color: white;
+  text-align:center;
+  }
+  
+  #lewy 
+  {
+  width: 25%;
+  float: left; 
+     }
+  
+  #prawy
+  {
+  width: 75%;
+  float: left;
+  }
+  
+  a:link, a:visited
+  {
+  text-decoration: none;
+  color:black
+  }
+  a:hover
+  {
+  color:white;
+  }
+  .menu
+  {
+  display: block;
+  width:80%;
+  background:white;
+  color: black;
+  padding: 10px;
+  margin:4px;
+  border-radius:20px;
+  border: 2px solid rgba(128,128,128,0.4);
+    }
+  .menu:hover{
+  background: rgba(128,128,128,0.4);
+  color: white;
+  cursor:pointer;
+  }
+  .aktywny
+  {
+  background:rgba(128,128,128,0.8);
+  }
+  
+  #bottom
+  {
+  cler:both;
+  }
+  #nip, #regon, #nazwa, #vat, #data, #ulica, #mieszkanie, #dom, #uwagi, #kolor, #platnikVat, #nr_domu, #nr_mieszkania
+  {
+  display:block;
+  width: 80%;
+  border-radius: 5px;
+  padding:10px;
+  margin: 4px;
+  }
+  .naglowek_tabeli
+  {
+  background: rgba(29,29,29,0.8);
+  color: #FAFAFA;
+  }
+  
+  #choose_colors {
+    float: left;
+}
+  
+  #edycja_danych
+  {
+  width:500px;
+  margin: auto;
+ align-items: center;
+  float:center;
+    }
